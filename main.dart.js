@@ -74860,14 +74860,17 @@ A.e5(p)}return A.M(null,r)}})
 return A.N($async$BW,r)}}
 A.a4M.prototype={
 $1(a){return this.Rx(a)},
-Rx(a){var s=0,r=A.O(t.P),q=this,p,o,n,m,l,k
+Rx(a){var s=0,r=A.O(t.P),q=this,p,o,n,m,l,k,j,i
 var $async$$1=A.P(function(b,c){if(b===1)return A.L(c,r)
-while(true)switch(s){case 0:k=null
+while(true)switch(s){case 0:i=null
 for(o=J.ap(a),n=q.a;o.q();){p=o.gI(o)
-m=J.am(p,"LATITUDE")
-l=J.am(p,"LONGITUDE")
-k=n.Nq(J.am(p,"EDiameter"),m,l,24.852888,67.063724)
-if(k||J.am(p,"IsAllowWFH")){n.b=p
+m=n.a
+l=m.a
+m=m.b
+k=J.am(p,"LATITUDE")
+j=J.am(p,"LONGITUDE")
+i=n.Nq(J.am(p,"EDiameter"),k,j,l,m)
+if(i||J.am(p,"IsAllowWFH")){n.b=p
 break}}if(n.b==null){o=q.b
 A.aaM(o,"Alert",u.v,"OK",new A.a4L(o),null,null)}else{n.c=!1
 n.a8()}return A.M(null,r)}})
@@ -74892,32 +74895,35 @@ s.a8()
 A.iI(u.v)},
 $S:5}
 A.a4J.prototype={
-$0(){var s=0,r=A.O(t.P),q=this,p,o,n,m,l,k
+$0(){var s=0,r=A.O(t.P),q=this,p,o,n,m,l,k,j,i
 var $async$$0=A.P(function(a,b){if(a===1)return A.L(b,r)
-while(true)switch(s){case 0:l=q.a
-k=l.c=!0
-l.a8()
+while(true)switch(s){case 0:j=q.a
+i=j.c=!0
+j.a8()
 o=q.b
 A.jr(o,!1).os(null)
 s=4
-return A.R(l.ly(o),$async$$0)
+return A.R(j.ly(o),$async$$0)
 case 4:s=b?2:3
 break
-case 2:n=J.am(l.b,"LATITUDE")
-m=J.am(l.b,"LONGITUDE")
-p=l.Nq(J.am(l.b,"EDiameter"),n,m,24.852888,67.063724)
-s=(!p?J.am(l.b,"IsAllowWFH"):k)?5:7
+case 2:n=j.a
+m=n.a
+n=n.b
+l=J.am(j.b,"LATITUDE")
+k=J.am(j.b,"LONGITUDE")
+p=j.Nq(J.am(j.b,"EDiameter"),l,k,m,n)
+s=(!p?J.am(j.b,"IsAllowWFH"):i)?5:7
 break
-case 5:k=l.b
-n=l.a
+case 5:i=j.b
+n=j.a
 m=n.a
 s=8
-return A.R(new A.a4O().wC(n.b,m,k).bj(new A.a4I(o),t.P),$async$$0)
+return A.R(new A.a4O().wC(n.b,m,i).bj(new A.a4I(o),t.P),$async$$0)
 case 8:s=6
 break
 case 7:A.iI("Maybe you're not at the allowed location.\nKindly mark attendance again.")
-case 6:case 3:l.c=!1
-l.a8()
+case 6:case 3:j.c=!1
+j.a8()
 return A.M(null,r)}})
 return A.N($async$$0,r)},
 $S:30}
