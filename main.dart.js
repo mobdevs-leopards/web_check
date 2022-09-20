@@ -75339,25 +75339,27 @@ $1(a){return new A.l6($.aH())},
 $S:439}
 A.l6.prototype={
 t2(a){return this.RU(a)},
-RU(a){var s=0,r=A.N(t.z),q=1,p,o=this,n,m,l,k,j
+RU(a){var s=0,r=A.N(t.z),q=1,p,o=this,n,m,l,k
 var $async$t2=A.O(function(b,c){if(b===1){p=c
 s=q}while(true)switch(s){case 0:q=3
 s=6
 return A.H(new A.a24().vT(),$async$t2)
 case 6:n=c
-if(J.vF(J.ap(n,"Data"))){l=o.a=!1
-o.ad()
-A.aEc(J.ap(J.ap(J.ap(n,"Data"),0),"NAME"))
+if(J.vF(J.ap(n,"Data"))){A.aEc(J.ap(J.ap(J.ap(n,"Data"),0),"NAME"))
 A.aEa(J.ap(J.ap(J.ap(n,"Data"),0),"Designation"))
-A.aEe((J.vD(J.cK(J.ap(n,"Data")),"photo")?J.ap(J.ap(J.ap(n,"Data"),0),"photo")!=null:l)?B.yE.cH(J.ap(J.ap(J.ap(n,"Data"),0),"photo")):"assets/images/emplogo.png")}else{A.hT("Your data not found")
+A.aEe(J.vD(J.cK(J.ap(n,"Data")),"photo")&&J.ap(J.ap(J.ap(n,"Data"),0),"photo")!=null?B.yE.cH(J.ap(J.ap(J.ap(n,"Data"),0),"photo")):"assets/images/emplogo.png")
+o.a=!1
+o.ad()}else{A.hT("Your data not found")
 o.a=!1
 o.ad()
-A.e0(a,"/NotAllowedScreen",t.X)}q=1
+A.e0(a,"/NotAllowedScreen",t.X)}o.a=!1
+o.ad()
+q=1
 s=5
 break
 case 3:q=2
-j=p
-m=A.Y(j)
+k=p
+m=A.Y(k)
 A.bu(m)
 s=5
 break
@@ -75428,9 +75430,8 @@ return A.H(new A.MI().q6(m.a.a,l.a.a),$async$wY)
 case 6:n=c
 if(J.e(J.ap(n,"status"),"success")&&J.e(J.ap(n,"message"),"Message Sent Successfully")){A.apj(m.a.a)
 A.api(l.a.a)
-A.e0(a,"/PinVerifecationScreen",t.X)}o.a=!1
-o.ad()
-q=1
+A.e0(a,"/PinVerifecationScreen",t.X)}else{o.a=!1
+o.ad()}q=1
 s=5
 break
 case 3:q=2
