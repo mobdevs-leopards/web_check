@@ -81162,9 +81162,9 @@ i.ag()
 o=q.b
 n=t.X
 A.f8(o,!1).hI(null,n)
-s=4
+s=5
 return A.E(i.mH(o),$async$$0)
-case 4:s=b?2:3
+case 5:s=b?2:4
 break
 case 2:m=i.a
 l=m.a
@@ -81172,20 +81172,22 @@ m=m.b
 k=J.W(i.b,"LATITUDE")
 j=J.W(i.b,"LONGITUDE")
 p=i.Ro(J.W(i.b,"EDiameter"),k,j,l,m)
-s=(!p?J.W(i.b,"IsAllowWFH"):h)?5:7
+s=(!p?J.W(i.b,"IsAllowWFH"):h)?6:8
 break
-case 5:h=i.b
+case 6:h=i.b
+i=i.a
 n=i.a
-m=n.a
-s=8
-return A.E(new A.ab9().zm(n.b,m,h).b_(new A.ab1(o),t.P),$async$$0)
-case 8:s=6
+s=9
+return A.E(new A.ab9().zm(i.b,n,h).b_(new A.ab1(o),t.P),$async$$0)
+case 9:s=7
 break
-case 7:A.dR(o,"/ProfileScreen",n,n)
+case 8:A.dR(o,"/ProfileScreen",n,n)
 A.eT("Maybe you're not at the allowed location.\nKindly mark attendance again.")
-case 6:case 3:i.e=!1
+case 7:s=3
+break
+case 4:i.e=!1
 i.ag()
-return A.I(null,r)}})
+case 3:return A.I(null,r)}})
 return A.J($async$$0,r)},
 $S:31}
 A.ab1.prototype={
