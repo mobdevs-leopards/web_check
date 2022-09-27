@@ -82046,7 +82046,7 @@ k=J.ar(c)
 j=J.bE(k.h(c,"EMP_NO"))
 i=k.h(c,"IsCheckIn")?"I":"O"
 s=7
-return A.E(A.aXK(n,A.ak(["Emp_no",j,"CHECKTYPE",i,"City",k.h(c,"CityName"),"LONGITUDE",B.c.iz(B.d.i(a)),"LATITUDE",B.c.iz(B.d.i(b)),"ISAllowWFH",J.bE(k.h(c,"IsAllowWFH")),"MarkedBy",J.bE(k.h(c,"EMP_NO"))],t.N,t.z)),$async$zm)
+return A.E(A.aXK(n,A.ak(["Emp_no",j,"CHECKTYPE",i,"City",k.h(c,"CityName"),"LONGITUDE",B.c.iz(B.d.i(a)),"LATITUDE",B.c.iz(B.d.i(b)),"ISAllowWFH",J.bE(k.h(c,"IsAllowWFH")),"MarkedBy",J.bE(k.h(c,"EMP_NO")),"ViaProcedure",5],t.N,t.z)),$async$zm)
 case 7:m=e
 if(m.b===200){k=m
 l=B.V.bt(0,A.j8(A.j6(k.e).c.a.h(0,"charset")).bt(0,k.w))
@@ -82393,17 +82393,15 @@ $S:0}
 A.r_.prototype={
 aa(){return new A.YG(new A.bl(null,t.am),B.i)}}
 A.YG.prototype={
-H(a){var s,r,q,p,o,n=null,m=t.w,l=a.K(m).f
-a.K(m).toString
-s=this.ghK().mD($.aLZ(),t.f1)
-if(s.a)m=B.fY
-else{m=A.aT("Enter Employee No",n,n,n,n,A.a1(a).RG.e.jM(20),n,n)
+H(a){var s,r,q,p,o,n=null,m=a.K(t.w).f,l=this.ghK().mD($.aLZ(),t.f1)
+if(l.a)m=B.fY
+else{s=A.aT("Enter Employee No",n,n,n,n,A.a1(a).RG.e.jM(20),n,n)
 r=A.a([$.aJe()],t.VS)
-r=A.aSh(s.b,B.Hj,r,B.zv,14,new A.atV(s))
-q=s.c
-p=s.d
+r=A.aSh(l.b,B.Hj,r,B.zv,14,new A.atV(l))
+q=l.c
+p=l.d
 o=t.p
-o=A.bP(A.a([B.dH,new A.fi(B.y,n,n,A.bP(A.a([m,new A.b7(n,l.a.b*0.05,n,n),r,B.UC,new A.bH(B.bE,A.aEI(q,p,p,B.LN,new A.atW(),n,B.fV,!0,p,new A.atX(s)),n),new A.n3(new A.atY(this,s,a),B.a0t,0,B.am,n),A.Rb(A.pK(),B.hg)],o),B.r,B.bj,B.t,B.v),n)],o),B.r,B.w,B.t,B.v)
+o=A.bP(A.a([B.dH,new A.fi(B.y,n,n,A.bP(A.a([s,new A.b7(n,m.a.b*0.05,n,n),r,B.UC,new A.bH(B.bE,A.aEI(q,p,p,B.LN,new A.atW(),n,B.fV,!0,p,new A.atX(l)),n),new A.n3(new A.atY(this,l,a),B.a0t,0,B.am,n),A.Rb(A.pK(),B.hg)],o),B.r,B.bj,B.t,B.v),n)],o),B.r,B.w,B.t,B.v)
 m=A.iO(n,n,new A.A9(o,B.hL,this.w),n)}return m}}
 A.atV.prototype={
 $1(a){var s=a==null?"":a
